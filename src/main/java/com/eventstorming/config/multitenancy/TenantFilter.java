@@ -2,7 +2,7 @@ path: {{name}}/{{{options.packagePath}}}/config/multitenancy
 ---
 package {{options.package}}.config.multitenancy;
 
-import food.delivery.security.AuthenticationService;
+import {{options.package}}.security.AuthenticationService;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
