@@ -26,6 +26,11 @@ ifDuplicated: merge
       <version>0.9.1</version>
     </dependency>
     <dependency>
+      <groupId>com.auth0</groupId>
+      <artifactId>java-jwt</artifactId>
+      <version>3.16.0</version>
+    </dependency>
+	    <dependency>
 	<groupId>org.postgresql</groupId>
 	<artifactId isKey="true">postgresql</artifactId>
 	<scope>runtime</scope>
