@@ -8,10 +8,10 @@ ifDuplicated: merge
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   
   <properties>
-		<java.version>11</java.version>
-		<spring-cloud.version>Hoxton.SR12</spring-cloud.version>
-		<spring-cloud-stream.version>Germantown.SR1</spring-cloud-stream.version>
-		<cucumber.version>6.8.1</cucumber.version>
+	<java.version>11</java.version>
+	<spring-cloud.version>Hoxton.SR12</spring-cloud.version>
+	<spring-cloud-stream.version>Germantown.SR1</spring-cloud-stream.version>
+	<cucumber.version>6.8.1</cucumber.version>
   </properties>
 
   <dependencies>
@@ -22,28 +22,28 @@ ifDuplicated: merge
     </dependency>
     <dependency>
       <groupId>com.auth0</groupId>
-      <artifactId>java-jwt</artifactId>
+      <artifactId isKey="true">java-jwt</artifactId>
       <version>3.16.0</version>
     </dependency>
     <dependency>
       <groupId>org.postgresql</groupId>
-      <artifactId>postgresql</artifactId>
+      <artifactId isKey="true">postgresql</artifactId>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>io.jsonwebtoken</groupId>
-      <artifactId>jjwt-api</artifactId>
+      <artifactId isKey="true">jjwt-api</artifactId>
       <version>0.11.2</version> <!-- Use the latest version available -->
     </dependency>
     <dependency>
       <groupId>io.jsonwebtoken</groupId>
-      <artifactId>jjwt-impl</artifactId>
+      <artifactId isKey="true">jjwt-impl</artifactId>
       <version>0.11.2</version> <!-- Use the same version as above -->
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>io.jsonwebtoken</groupId>
-      <artifactId>jjwt-jackson</artifactId>
+      <artifactId isKey="true">jjwt-jackson</artifactId>
       <version>0.11.2</version> <!-- Use the same version as above -->
       <scope>runtime</scope>
     </dependency>
