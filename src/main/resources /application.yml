@@ -5,11 +5,17 @@ ifDuplicated: merge
 ---
 spring:
   jpa:
-    _key: 'database'
+    generate-ddl: true
     database: POSTGRESQL
     show-sql: true
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create
+    properties:
+      hibernate:
+        ddl-auto: create-drop
+        show_sql: true
+        format_sql: true
+        implicit_naming_strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl
 ---
 # spring:
 #   _key: 'profiles'
