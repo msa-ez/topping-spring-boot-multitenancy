@@ -3,7 +3,6 @@ fileName: application.yml
 path: {{name}}/src/main/resources
 ifDuplicated: merge
 ---
----
 spring:
   _key: 'jpa'
   jpa:
