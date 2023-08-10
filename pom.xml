@@ -21,16 +21,33 @@ ifDuplicated: merge
       <version>${spring-boot.version}</version>
     </dependency>
     <dependency>
-      <groupId>io.jsonwebtoken</groupId>
-      <artifactId isKey="true">jjwt</artifactId>
-      <version>0.9.1</version>
-    </dependency>
-    <dependency>
       <groupId>com.auth0</groupId>
       <artifactId>java-jwt</artifactId>
       <version>3.16.0</version>
     </dependency>
-	    <dependency>
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt-api</artifactId>
+      <version>0.11.2</version> <!-- Use the latest version available -->
+    </dependency>
+    <dependency>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt-impl</artifactId>
+      <version>0.11.2</version> <!-- Use the same version as above -->
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt-jackson</artifactId>
+      <version>0.11.2</version> <!-- Use the same version as above -->
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
 	<groupId>org.postgresql</groupId>
 	<artifactId isKey="true">postgresql</artifactId>
 	<scope>runtime</scope>
