@@ -6,10 +6,19 @@ import com.auth0.jwt.JWT;
 import com.auth0.jwt.interfaces.DecodedJWT;
 
 public class JwtTokenParser {
+    public static String extractDomainFromEmail(String email) {
+        int atIndex = email.indexOf('@');
+        if (atIndex != -1) {
+            return email.substring(atIndex + 1);
+        }
+        return null;
+    }
+
     public static String extractAudienceFromToken(String token) {
         try {
             DecodedJWT jwt = JWT.decode(token);
-            return jwt.getAudience().get(0);
+            String email =  jwt.getClaim("email").asString();
+            return extractDomainFromEmail(email);
         } catch (Exception e) {
             e.printStackTrace();
             return null;
