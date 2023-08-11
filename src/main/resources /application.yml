@@ -3,9 +3,8 @@ fileName: application.yml
 path: {{name}}/src/main/resources
 ifDuplicated: merge
 ---
----
+_key: 'spring'
 spring:
-  _key: 'jpa'
   jpa:
     generate-ddl: true
     database: POSTGRESQL
@@ -18,5 +17,5 @@ spring:
         show_sql: true
         format_sql: true
         implicit_naming_strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl
----
+
 
