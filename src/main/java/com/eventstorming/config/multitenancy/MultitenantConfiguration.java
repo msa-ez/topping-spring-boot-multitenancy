@@ -45,7 +45,7 @@ public class MultitenantConfiguration {
         }
 
         AbstractRoutingDataSource dataSource = new MultitenantDataSource();
-        dataSource.setDefaultTargetDataSource(resolvedDataSources.get("tenant_1"));
+        dataSource.setDefaultTargetDataSource(resolvedDataSources.get("defalut"));
         dataSource.setTargetDataSources(resolvedDataSources);
 
         dataSource.afterPropertiesSet();
