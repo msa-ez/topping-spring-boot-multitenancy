@@ -3,6 +3,7 @@ fileName: application.yml
 path: {{name}}/src/main/resources
 ifDuplicated: merge
 ---
+---
 spring:
   _key: 'jpa'
   jpa:
@@ -18,3 +19,18 @@ spring:
         format_sql: true
         implicit_naming_strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl
 
+---
+spring:
+  _key: 'jpa'
+  jpa:
+    generate-ddl: true
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        ddl-auto: create-drop
+        show_sql: true
+        format_sql: true
+        implicit_naming_strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl
