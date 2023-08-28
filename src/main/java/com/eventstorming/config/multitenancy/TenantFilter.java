@@ -6,8 +6,8 @@ package {{options.package}}.config.multitenancy;
 import java.io.IOException;
 
 import javax.crypto.SecretKey;
-import javax.servlet.*;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.*;
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.annotation.Order;
@@ -29,6 +29,8 @@ import io.jsonwebtoken.security.Keys;
 @Order(1)
 class TenantFilter implements Filter {
 
+    @Autowired
+    TenantIdentifierResolver tenantIdentifierResolver;
 
     @Override
     public void doFilter(
@@ -45,11 +47,13 @@ class TenantFilter implements Filter {
         String tenant = JwtTokenParser.extractAudienceFromToken(token.replace("Bearer ", ""));
     
         TenantContext.setCurrentTenant(tenant);
+        tenantIdentifierResolver.setCurrentTenant(tenant);
 
         try {
             chain.doFilter(request, response);
         } finally {
             TenantContext.setCurrentTenant("");
+            tenantIdentifierResolver.setCurrentTenant(tenant);
         }
     }
 }
