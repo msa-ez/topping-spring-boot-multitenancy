@@ -51,6 +51,11 @@ ifDuplicated: merge
 	<groupId>org.postgresql</groupId>
 	<artifactId isKey="true">postgresql</artifactId>
 	<scope>runtime</scope>
-    </dependency> 
+    </dependency>
+    <dependency>
+	<groupId>org.hibernate</groupId>
+	<artifactId isKey="true">hibernate-core</artifactId>
+	<version>6.1.7.Final</version>
+    </dependency>
    </dependencies>
 </project>
