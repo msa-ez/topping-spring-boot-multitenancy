@@ -1,4 +1,6 @@
-package wizmokeycloak.config.multitenancy;
+path: {{name}}/{{{options.packagePath}}}/config/multitenancy
+---
+package {{options.package}}.config.multitenancy;
 
 import java.util.Map;
 
