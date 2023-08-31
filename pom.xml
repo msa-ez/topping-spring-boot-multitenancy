@@ -34,11 +34,6 @@ ifDuplicated: merge
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId isKey="true">spring-boot-starter-security</artifactId>
-      <version>${spring-boot.version}</version>
-    </dependency>
-    <dependency>
       <groupId>com.auth0</groupId>
       <artifactId isKey="true">java-jwt</artifactId>
       <version>3.16.0</version>
