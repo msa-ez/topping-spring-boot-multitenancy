@@ -1,3 +1,4 @@
+forEach: Model
 ifDuplicated: merge
 ---
 version: '2'
