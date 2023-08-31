@@ -2,4 +2,4 @@ name: Spring boot multitenancy
 rating: 5
 imageUrl: https://github.com/msa-ez/topping-spring-security/assets/123912988/0a910647-98f8-4e7d-b0c8-7a40e223dead
 templateName: spring-boot-multitenancy
-description: Spring boot multitenancy description
+description: Data is efficiently partitioned to maintain independence among tenants in a partitioned spring-boot-multitenancy setup.
