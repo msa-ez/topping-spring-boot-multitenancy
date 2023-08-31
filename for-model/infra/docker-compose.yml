@@ -1,6 +1,6 @@
 forEach: Model
 fileName: docker-compose.yml
-path: for-model/infra
+path: infra/
 ifDuplicated: merge
 ---
 
