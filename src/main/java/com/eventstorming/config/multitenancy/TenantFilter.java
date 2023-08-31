@@ -46,13 +46,11 @@ class TenantFilter implements Filter {
 
         String tenant = JwtTokenParser.extractAudienceFromToken(token.replace("Bearer ", ""));
     
-        TenantContext.setCurrentTenant(tenant);
         tenantIdentifierResolver.setCurrentTenant(tenant);
 
         try {
             chain.doFilter(request, response);
         } finally {
-            TenantContext.setCurrentTenant("");
             tenantIdentifierResolver.setCurrentTenant(tenant);
         }
     }
