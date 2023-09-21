@@ -4,4 +4,5 @@ imageUrl: https://github.com/msa-ez/topping-spring-security/assets/123912988/0a9
 templateName: spring-boot-multitenancy-partioned
 description: Data is efficiently partitioned to maintain independence among tenants in a partitioned spring-boot-multitenancy setup.
 depends:
-group: Multitenancy
+  - template-spring-boot3
+tags: Multitenancy
