@@ -5,4 +5,5 @@ templateName: spring-boot-multitenancy-partioned
 description: Data is efficiently partitioned to maintain independence among tenants in a partitioned spring-boot-multitenancy setup.
 depends:
   - template-spring-boot3
-tags: Multitenancy
+tags:
+  - Multitenancy
