@@ -1,6 +1,6 @@
 name: Spring boot multitenancy partitioned
 rating: 5
-imageUrl: https://github.com/kibum0405/topping-wijmo/assets/59447401/f5a6193f-cce9-4f43-a8aa-23c269eabbd1
+imageUrl: https://github.com/kibum0405/topping-wijmo/assets/59447401/3cf4bb64-9128-4eae-8aba-7e70cb8b55fb
 templateName: spring-boot-multitenancy-partioned
 description: Data is efficiently partitioned to maintain independence among tenants in a partitioned spring-boot-multitenancy setup.
 depends:
