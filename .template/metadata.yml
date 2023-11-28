@@ -1,6 +1,6 @@
 name: Spring boot multitenancy partitioned
 rating: 5
-imageUrl: https://github.com/msa-ez/template-spring-boot-3/assets/123912988/cb0eef88-b628-4bd6-ba0b-3cfd6b0cd45a
+imageUrl: https://github.com/msa-ez/topping-spring-boot-multitenancy-schema/assets/123912988/24ae95e9-e2db-49a0-8290-2100a7777231
 description: Data is efficiently partitioned to maintain independence among tenants in a partitioned spring-boot-multitenancy setup.
 depends:
   - spring-boot-3
